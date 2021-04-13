@@ -1,3 +1,4 @@
+import { Header } from "./Header";
 import { MovieCard } from "./MovieCard"
 
 import '../styles/content.scss';
@@ -19,9 +20,7 @@ interface ContentProps{
 export function Content(props:ContentProps) {
   return(
     <div className="container">
-        <header>
-          <span className="category">Categoria:<span> {props.title}</span></span>
-        </header>
+        <Header title={props.title}/>
 
         <main>
           <div className="movies-list">
